@@ -1,4 +1,4 @@
-# Enforces underscore prefix for function parameters. (`require-param-underscore`)
+# Enforce underscore prefix or suffix in function parameter names. (`require-param-underscore`)
 
 My stylistic preference is to begin every function parameter name with an 
 underscore, which makes it easy to tell at a glance what variables in a function
