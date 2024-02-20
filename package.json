@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "test": "node ./tests/require-param-underscore.test.js"
   },

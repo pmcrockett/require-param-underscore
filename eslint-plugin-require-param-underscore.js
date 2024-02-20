@@ -1,3 +1,3 @@
-const underscoreRule = require("./lib/rules/require-param-underscore");
+import underscoreRule from "./lib/rules/require-param-underscore.js";
 const plugin = { rules: { "require-param-underscore": underscoreRule } };
-module.exports = plugin;
+export default plugin;

@@ -1,5 +1,5 @@
-const {RuleTester} = require("eslint");
-const underscoreRule = require("../lib/rules/require-param-underscore");
+import {RuleTester} from "eslint";
+import underscoreRule from "../lib/rules/require-param-underscore.js";
 
 const ruleTester = new RuleTester({
   parserOptions: { ecmaVersion: 2015 }
