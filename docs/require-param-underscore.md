@@ -9,16 +9,18 @@ underscores, so it may not be appropriate to all coding contexts.
 ## Rule Details
 
 This rule requires that every function parameter name begin or end with an 
-underscore (depending on how the option is set) and can automatically fix code 
-to follow this convention.
+underscore (depending on how the option is set). Automatic fixing is not 
+implemented.
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
-// function bar(foo) {}
-// const bar = function(foo) {}",
-// foo => {}
+function bar(foo) {}
+
+const bar = function(foo) {}
+
+foo => {}
 
 ```
 
@@ -27,14 +29,20 @@ Examples of **correct** code for this rule:
 ```js
 
 // Option "pre":
-// function bar(_foo) {}
-// const bar = function(_foo) {}",
-// _foo => {}
-//
+
+function bar(_foo) {}
+
+const bar = function(_foo) {}
+
+_foo => {}
+
 // Option "post":
-// function bar(foo_) {}
-// const bar = function(foo_) {}",
-// foo_ => {}
+
+function bar(foo_) {}
+
+const bar = function(foo_) {}
+
+foo_ => {}
 
 ```
 
